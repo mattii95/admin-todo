@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { CiLogout } from "react-icons/ci";
 import SidebarItem from "./SidebarItem";
-import { IoCalendarOutline, IoCheckboxOutline, IoCodeWorkingOutline, IoListOutline } from "react-icons/io5";
+import { IoBasketOutline, IoCalendarOutline, IoCheckboxOutline, IoCodeWorkingOutline, IoListOutline } from "react-icons/io5";
 
 type RouteItem = {
     title: string,
@@ -11,10 +11,11 @@ type RouteItem = {
 }
 
 const routes: RouteItem[] = [
-    { title: 'dashboard', href: '/dashboard', icon: <IoCalendarOutline size={30} /> },
+    { title: 'Dashboard', href: '/dashboard', icon: <IoCalendarOutline size={30} /> },
     { title: 'Rest TODO', href: '/dashboard/rest-todos', icon: <IoCheckboxOutline size={30} /> },
     { title: 'Server Actions', href: '/dashboard/server-todos', icon: <IoListOutline size={30} /> },
     { title: 'Cookies', href: '/dashboard/cookies', icon: <IoCodeWorkingOutline size={30} /> },
+    { title: 'Productos', href: '/dashboard/products', icon: <IoBasketOutline size={30} /> },
 ]
 
 export default function Sidebar() {
